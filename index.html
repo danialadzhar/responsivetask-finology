@@ -591,23 +591,23 @@
 
             function generateReport() {
                 // Simulate report generation
-                var loadingHtml = '<div class="alert alert-info">Generating report... Please wait.</div>';
+                var loadingHtml = '<div class="alert alert-info px-custom">Generating report... Please wait.</div>';
                 $('main').prepend(loadingHtml);
 
                 setTimeout(function () {
                     $('.alert').remove();
-                    $('main').prepend('<div class="alert alert-success">Report generated successfully! <a href="#" class="alert-link">Download PDF</a></div>');
+                    $('main').prepend('<div class="alert alert-success px-custom">Report generated successfully! <a href="#" class="alert-link">Download PDF</a></div>');
                 }, 2000);
             }
 
             function sendNewsletter() {
                 // Simulate newsletter sending
-                $('main').prepend('<div class="alert alert-warning">Newsletter sent to 2,847 subscribers!</div>');
+                $('main').prepend('<div class="alert alert-warning px-custom">Newsletter sent to 2,847 subscribers!</div>');
             }
 
             function backupData() {
                 // Simulate data backup
-                $('main').prepend('<div class="alert alert-info">Data backup initiated. Estimated completion: 5 minutes.</div>');
+                $('main').prepend('<div class="alert alert-info px-custom">Data backup initiated. Estimated completion: 5 minutes.</div>');
             }
 
             // Table row actions

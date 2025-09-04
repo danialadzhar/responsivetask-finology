@@ -331,11 +331,12 @@ footer .col-12 {
 /* Gaya asas untuk mobile yang akan digunakan sebagai foundation */
 
 /* Tablet Styles (576px and up) */
-@media (min-width: 576px) {
-
+/* Media query untuk minimum lebar 320px hingga 480px (mobile kecil) */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Letak gaya khas untuk skrin kecil di sini jika perlu */
     .px-custom {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .container-fluid {
@@ -343,10 +344,10 @@ footer .col-12 {
         padding-right: 0;
     }
 
-    .row {
+    /* .row {
         margin-left: -0.75rem;
         margin-right: -0.75rem;
-    }
+    } */
 
     .btn-group {
         display: flex;
@@ -361,10 +362,10 @@ footer .col-12 {
 }
 
 /* Medium Tablet Styles (768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .container-fluid {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .px-custom {
@@ -466,7 +467,7 @@ footer .col-12 {
 }
 
 /* Large Tablet/Small Desktop (992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
     /* Sidebar mula ditunjukkan pada desktop */
     .sidebar {
