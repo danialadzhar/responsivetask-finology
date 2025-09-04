@@ -49,7 +49,7 @@
         <!-- Main Content Area -->
         <div class="row">
             <!-- Main Content -->
-            <main class="col-md-12 col-lg-12">
+            <main class="col-md-12 col-lg-12 px-custom">
                 <!-- Dashboard Overview Cards -->
                 <div class="row mb-4">
                     <div class="col-xl-3 col-md-6 mb-4">
@@ -122,164 +122,175 @@
                 </div>
 
                 <!-- Data Table Section -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-white">Employee Directory</h6>
-                        <div class="dropdown no-arrow">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-three-dots-vertical fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                aria-labelledby="dropdownMenuLink">
-                                <div class="dropdown-header">Actions:</div>
-                                <a class="dropdown-item" href="#">Export Data</a>
-                                <a class="dropdown-item" href="#">Print Report</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Refresh</a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-white">Employee Directory</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical fa-sm fa-fw text-white"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                        aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Actions:</div>
+                                        <a class="dropdown-item" href="#">Export Data</a>
+                                        <a class="dropdown-item" href="#">Print Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Refresh</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered" id="employeeTable" width="100%" cellspacing="0">
-                                <thead class="table-dark">
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Department</th>
-                                        <th>Email</th>
-                                        <th>Phone</th>
-                                        <th>Hire Date</th>
-                                        <th>Salary</th>
-                                        <th>Status</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="ID">001</td>
-                                        <td data-label="Name">John Smith</td>
-                                        <td data-label="Position">Senior Developer</td>
-                                        <td data-label="Department">Engineering</td>
-                                        <td data-label="Email">john.smith@company.com</td>
-                                        <td data-label="Phone">+1 (555) 123-4567</td>
-                                        <td data-label="Hire Date">2020-03-15</td>
-                                        <td data-label="Salary">$85,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">002</td>
-                                        <td data-label="Name">Sarah Johnson</td>
-                                        <td data-label="Position">Product Manager</td>
-                                        <td data-label="Department">Product</td>
-                                        <td data-label="Email">sarah.johnson@company.com</td>
-                                        <td data-label="Phone">+1 (555) 234-5678</td>
-                                        <td data-label="Hire Date">2019-07-22</td>
-                                        <td data-label="Salary">$95,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">003</td>
-                                        <td data-label="Name">Michael Chen</td>
-                                        <td data-label="Position">UX Designer</td>
-                                        <td data-label="Department">Design</td>
-                                        <td data-label="Email">michael.chen@company.com</td>
-                                        <td data-label="Phone">+1 (555) 345-6789</td>
-                                        <td data-label="Hire Date">2021-01-10</td>
-                                        <td data-label="Salary">$75,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">004</td>
-                                        <td data-label="Name">Emily Davis</td>
-                                        <td data-label="Position">Marketing Specialist</td>
-                                        <td data-label="Department">Marketing</td>
-                                        <td data-label="Email">emily.davis@company.com</td>
-                                        <td data-label="Phone">+1 (555) 456-7890</td>
-                                        <td data-label="Hire Date">2020-11-05</td>
-                                        <td data-label="Salary">$65,000</td>
-                                        <td data-label="Status"><span class="badge bg-warning">On Leave</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">005</td>
-                                        <td data-label="Name">David Wilson</td>
-                                        <td data-label="Position">DevOps Engineer</td>
-                                        <td data-label="Department">Engineering</td>
-                                        <td data-label="Email">david.wilson@company.com</td>
-                                        <td data-label="Phone">+1 (555) 567-8901</td>
-                                        <td data-label="Hire Date">2018-09-12</td>
-                                        <td data-label="Salary">$90,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">006</td>
-                                        <td data-label="Name">Lisa Brown</td>
-                                        <td data-label="Position">HR Coordinator</td>
-                                        <td data-label="Department">Human Resources</td>
-                                        <td data-label="Email">lisa.brown@company.com</td>
-                                        <td data-label="Phone">+1 (555) 678-9012</td>
-                                        <td data-label="Hire Date">2021-06-20</td>
-                                        <td data-label="Salary">$55,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">007</td>
-                                        <td data-label="Name">Robert Taylor</td>
-                                        <td data-label="Position">Sales Director</td>
-                                        <td data-label="Department">Sales</td>
-                                        <td data-label="Email">robert.taylor@company.com</td>
-                                        <td data-label="Phone">+1 (555) 789-0123</td>
-                                        <td data-label="Hire Date">2017-04-08</td>
-                                        <td data-label="Salary">$120,000</td>
-                                        <td data-label="Status"><span class="badge bg-success">Active</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="ID">008</td>
-                                        <td data-label="Name">Amanda Garcia</td>
-                                        <td data-label="Position">Data Analyst</td>
-                                        <td data-label="Department">Analytics</td>
-                                        <td data-label="Email">amanda.garcia@company.com</td>
-                                        <td data-label="Phone">+1 (555) 890-1234</td>
-                                        <td data-label="Hire Date">2022-02-14</td>
-                                        <td data-label="Salary">$70,000</td>
-                                        <td data-label="Status"><span class="badge bg-info">Training</span></td>
-                                        <td data-label="Actions">
-                                            <button class="btn btn-sm btn-primary">Edit</button>
-                                            <button class="btn btn-sm btn-danger">Delete</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="employeeTable" width="100%" cellspacing="0">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Department</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Hire Date</th>
+                                                <th>Salary</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="ID">001</td>
+                                                <td data-label="Name">John Smith</td>
+                                                <td data-label="Position">Senior Developer</td>
+                                                <td data-label="Department">Engineering</td>
+                                                <td data-label="Email">john.smith@company.com</td>
+                                                <td data-label="Phone">+1 (555) 123-4567</td>
+                                                <td data-label="Hire Date">2020-03-15</td>
+                                                <td data-label="Salary">$85,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">002</td>
+                                                <td data-label="Name">Sarah Johnson</td>
+                                                <td data-label="Position">Product Manager</td>
+                                                <td data-label="Department">Product</td>
+                                                <td data-label="Email">sarah.johnson@company.com</td>
+                                                <td data-label="Phone">+1 (555) 234-5678</td>
+                                                <td data-label="Hire Date">2019-07-22</td>
+                                                <td data-label="Salary">$95,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">003</td>
+                                                <td data-label="Name">Michael Chen</td>
+                                                <td data-label="Position">UX Designer</td>
+                                                <td data-label="Department">Design</td>
+                                                <td data-label="Email">michael.chen@company.com</td>
+                                                <td data-label="Phone">+1 (555) 345-6789</td>
+                                                <td data-label="Hire Date">2021-01-10</td>
+                                                <td data-label="Salary">$75,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">004</td>
+                                                <td data-label="Name">Emily Davis</td>
+                                                <td data-label="Position">Marketing Specialist</td>
+                                                <td data-label="Department">Marketing</td>
+                                                <td data-label="Email">emily.davis@company.com</td>
+                                                <td data-label="Phone">+1 (555) 456-7890</td>
+                                                <td data-label="Hire Date">2020-11-05</td>
+                                                <td data-label="Salary">$65,000</td>
+                                                <td data-label="Status"><span class="badge bg-warning">On Leave</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">005</td>
+                                                <td data-label="Name">David Wilson</td>
+                                                <td data-label="Position">DevOps Engineer</td>
+                                                <td data-label="Department">Engineering</td>
+                                                <td data-label="Email">david.wilson@company.com</td>
+                                                <td data-label="Phone">+1 (555) 567-8901</td>
+                                                <td data-label="Hire Date">2018-09-12</td>
+                                                <td data-label="Salary">$90,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">006</td>
+                                                <td data-label="Name">Lisa Brown</td>
+                                                <td data-label="Position">HR Coordinator</td>
+                                                <td data-label="Department">Human Resources</td>
+                                                <td data-label="Email">lisa.brown@company.com</td>
+                                                <td data-label="Phone">+1 (555) 678-9012</td>
+                                                <td data-label="Hire Date">2021-06-20</td>
+                                                <td data-label="Salary">$55,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">007</td>
+                                                <td data-label="Name">Robert Taylor</td>
+                                                <td data-label="Position">Sales Director</td>
+                                                <td data-label="Department">Sales</td>
+                                                <td data-label="Email">robert.taylor@company.com</td>
+                                                <td data-label="Phone">+1 (555) 789-0123</td>
+                                                <td data-label="Hire Date">2017-04-08</td>
+                                                <td data-label="Salary">$120,000</td>
+                                                <td data-label="Status"><span class="badge bg-success">Active</span>
+                                                </td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="ID">008</td>
+                                                <td data-label="Name">Amanda Garcia</td>
+                                                <td data-label="Position">Data Analyst</td>
+                                                <td data-label="Department">Analytics</td>
+                                                <td data-label="Email">amanda.garcia@company.com</td>
+                                                <td data-label="Phone">+1 (555) 890-1234</td>
+                                                <td data-label="Hire Date">2022-02-14</td>
+                                                <td data-label="Salary">$70,000</td>
+                                                <td data-label="Status"><span class="badge bg-info">Training</span></td>
+                                                <td data-label="Actions">
+                                                    <button class="btn btn-sm btn-primary">Edit</button>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -324,7 +335,7 @@
                     <div class="col-lg-4">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Quick Actions</h6>
+                                <h6 class="m-0 font-weight-bold text-white">Quick Actions</h6>
                             </div>
                             <div class="card-body">
                                 <div class="d-grid gap-2">

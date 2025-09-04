@@ -11,6 +11,11 @@ body {
     line-height: 1.5;
 }
 
+/* .px-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+} */
+
 /* Container - Mobile First */
 .container-fluid {
     padding-left: 0;
@@ -327,6 +332,12 @@ footer .col-12 {
 
 /* Tablet Styles (576px and up) */
 @media (min-width: 576px) {
+
+    .px-custom {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .container-fluid {
         padding-left: 0;
         padding-right: 0;
@@ -352,8 +363,13 @@ footer .col-12 {
 /* Medium Tablet Styles (768px and up) */
 @media (min-width: 768px) {
     .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .px-custom {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .card-body {
@@ -392,57 +408,58 @@ footer .col-12 {
 
 /* Tablet Size Fix (768px - 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
+
     /* Ensure table stays within card boundaries on tablet */
     .table-responsive {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-    
+
     .table {
         min-width: 700px;
         font-size: 0.85rem;
     }
-    
+
     .table th {
         padding: 0.75rem 0.5rem;
         font-size: 0.8rem;
     }
-    
+
     .table td {
         padding: 0.75rem 0.5rem;
         font-size: 0.85rem;
     }
-    
+
     /* Make sure buttons fit in tablet */
     .table td[data-label="Actions"] .btn {
         padding: 0.375rem 0.75rem;
         font-size: 0.8rem;
     }
-    
+
     /* Header responsive for tablet */
     /* header {
         padding: 1.5rem 0;
     } */
-    
+
     .display-4 {
         font-size: 2.5rem;
     }
-    
+
     .lead {
         font-size: 1.1rem;
     }
-    
+
     /* Mobile nav button sizing for tablet */
     .btn[data-bs-toggle="collapse"] {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     /* Tablet header/footer padding */
     header .col-12 {
         padding: 2rem 1.5rem !important;
     }
-    
+
     footer .col-12 {
         padding: 1.5rem !important;
     }
@@ -487,7 +504,7 @@ footer .col-12 {
 /* Large Desktop (1200px and up) */
 @media (min-width: 1200px) {
     .container-fluid {
-        max-width: 1400px;
+        /* max-width: 1400px; */
         margin: 0;
         padding-left: 0;
         padding-right: 0;
@@ -549,12 +566,12 @@ footer .col-12 {
     .lead {
         font-size: 1.25rem;
     }
-    
+
     /* Desktop header/footer padding */
     header .col-12 {
         padding: 2.5rem 2rem !important;
     }
-    
+
     footer .col-12 {
         padding: 2rem !important;
     }
@@ -566,6 +583,7 @@ footer .col-12 {
 
 /* Mobile-First Table Layout - Horizontal Scroll */
 @media (max-width: 767px) {
+
     /* Scrollable table container */
     .table-responsive {
         overflow-x: auto;
@@ -575,50 +593,50 @@ footer .col-12 {
         margin: 0;
         padding: 0;
     }
-    
+
     .table {
         min-width: 800px;
         margin-bottom: 0;
         font-size: 0.8rem;
     }
-    
+
     .table th {
         padding: 0.5rem 0.4rem;
         font-size: 0.7rem;
         white-space: nowrap;
     }
-    
+
     .table td {
         padding: 0.5rem 0.4rem;
         font-size: 0.8rem;
         white-space: nowrap;
         vertical-align: middle;
     }
-    
+
     /* Make email and long text wrap */
     .table td[data-label="Email"] {
         white-space: normal;
         max-width: 150px;
         word-wrap: break-word;
     }
-    
+
     /* Action buttons responsive */
     .table td[data-label="Actions"] {
         white-space: nowrap;
         min-width: 120px;
     }
-    
+
     .table td[data-label="Actions"] .btn {
         padding: 0.25rem 0.5rem;
         font-size: 0.7rem;
         margin-right: 0.25rem;
     }
-    
+
     /* Fix card body for scrollable table */
     .card-body {
         padding: 1rem;
     }
-    
+
     /* Add scroll indicator */
     .table-responsive::after {
         content: "← Scroll untuk melihat lebih →";
@@ -629,41 +647,41 @@ footer .col-12 {
         margin-top: 0.5rem;
         font-style: italic;
     }
-    
+
     /* Fix header sizes for mobile */
     /* header {
         padding: 1rem 0;
         overflow-x: hidden;
     } */
-    
+
     .display-4 {
         font-size: 1.6rem;
         line-height: 1.2;
         margin-bottom: 0.5rem;
         word-wrap: break-word;
     }
-    
+
     .lead {
         font-size: 0.85rem;
         margin-bottom: 0;
     }
-    
+
     /* Mobile nav improvements */
     .btn[data-bs-toggle="collapse"] {
         padding: 0.5rem 0.75rem;
         font-size: 0.85rem;
         min-height: 40px;
     }
-    
+
     /* Mobile header/footer full width - minimal padding */
     header .col-12 {
         padding: 1.5rem 1rem !important;
     }
-    
+
     footer .col-12 {
         padding: 1rem !important;
     }
-    
+
     /* Proper button sizing for touch */
     .btn {
         padding: 0.75rem 1rem;
@@ -671,33 +689,34 @@ footer .col-12 {
         min-height: 44px;
         border-radius: 0.375rem;
     }
-    
+
     .btn-sm {
         padding: 0.5rem 0.75rem;
         font-size: 0.8rem;
         min-height: 38px;
     }
-    
+
     /* Fix typography sizes */
     .text-xs {
         font-size: 0.8rem;
     }
-    
-    .card-title, .h5 {
+
+    .card-title,
+    .h5 {
         font-size: 1.1rem;
     }
-    
+
     /* Timeline mobile layout */
     .timeline {
         padding-left: 1rem;
     }
-    
+
     .timeline-item {
         padding-left: 1rem;
         margin-bottom: 1.5rem;
         border-left: 3px solid #e3e6f0;
     }
-    
+
     .timeline-marker {
         position: absolute;
         left: -0.5rem;
@@ -708,28 +727,29 @@ footer .col-12 {
         border: 2px solid #fff;
         box-shadow: 0 0 0 2px #e3e6f0;
     }
-    
+
     /* Proper container management */
     .container-fluid {
         padding-left: 0;
         padding-right: 0;
         overflow-x: hidden;
     }
-    
+
     .row {
         margin-left: -0.5rem;
         margin-right: -0.5rem;
     }
-    
+
     .card {
         margin-bottom: 1.5rem;
         border-radius: 0.5rem;
         width: 100%;
         max-width: 100%;
     }
-    
+
     /* Dashboard cards in single column on mobile */
-    .col-xl-3, .col-md-6 {
+    .col-xl-3,
+    .col-md-6 {
         flex: 0 0 100%;
         max-width: 100%;
         margin-bottom: 1rem;
