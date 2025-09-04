@@ -11,10 +11,6 @@ body {
     line-height: 1.5;
 }
 
-/* .px-custom {
-    padding-left: 2rem;
-    padding-right: 2rem;
-} */
 
 /* Container - Mobile First */
 .container-fluid {
@@ -333,6 +329,7 @@ footer .col-12 {
 /* Tablet Styles (576px and up) */
 /* Media query untuk minimum lebar 320px hingga 480px (mobile kecil) */
 @media (min-width: 320px) and (max-width: 480px) {
+
     /* Letak gaya khas untuk skrin kecil di sini jika perlu */
     .px-custom {
         padding-left: 1rem;
@@ -344,10 +341,6 @@ footer .col-12 {
         padding-right: 0;
     }
 
-    /* .row {
-        margin-left: -0.75rem;
-        margin-right: -0.75rem;
-    } */
 
     .btn-group {
         display: flex;
@@ -437,10 +430,6 @@ footer .col-12 {
         font-size: 0.8rem;
     }
 
-    /* Header responsive for tablet */
-    /* header {
-        padding: 1.5rem 0;
-    } */
 
     .display-4 {
         font-size: 2.5rem;
@@ -505,10 +494,14 @@ footer .col-12 {
 /* Large Desktop (1200px and up) */
 @media (min-width: 1200px) {
     .container-fluid {
-        /* max-width: 1400px; */
         margin: 0;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .px-custom {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .sidebar {
@@ -640,7 +633,7 @@ footer .col-12 {
 
     /* Add scroll indicator */
     .table-responsive::after {
-        content: "← Scroll untuk melihat lebih →";
+        content: "← Scroll for view more →";
         display: block;
         text-align: center;
         font-size: 0.7rem;
@@ -649,11 +642,6 @@ footer .col-12 {
         font-style: italic;
     }
 
-    /* Fix header sizes for mobile */
-    /* header {
-        padding: 1rem 0;
-        overflow-x: hidden;
-    } */
 
     .display-4 {
         font-size: 1.6rem;
