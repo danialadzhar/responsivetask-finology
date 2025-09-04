@@ -13,8 +13,9 @@ body {
 
 /* Container - Mobile First */
 .container-fluid {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -327,8 +328,8 @@ footer .col-12 {
 /* Tablet Styles (576px and up) */
 @media (min-width: 576px) {
     .container-fluid {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .row {
@@ -351,8 +352,8 @@ footer .col-12 {
 /* Medium Tablet Styles (768px and up) */
 @media (min-width: 768px) {
     .container-fluid {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .card-body {
@@ -487,9 +488,9 @@ footer .col-12 {
 @media (min-width: 1200px) {
     .container-fluid {
         max-width: 1400px;
-        margin: 0 auto;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sidebar {
@@ -710,8 +711,8 @@ footer .col-12 {
     
     /* Proper container management */
     .container-fluid {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0;
+        padding-right: 0;
         overflow-x: hidden;
     }
     
